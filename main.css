@@ -1,37 +1,39 @@
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
+.tabs {
+  width: 820px;
+}
 
-/*.tabs {
-  position: relative;
-}
-.tab-b {
-  position: absolute;
-  background: #fff;
-  width: 800px;
-  height: 500px;
-  border: 1px solid grey;
-  top: 47px;
-}
 .tab-h {
-  position: absolute;
-  background: #fff;
+ margin: 10px 0 0 10px;
   width: 80px;
   height: 50px;
   border: 1px solid grey;
-}
-[data-tab="3"] {
-  left: 90px;
-}*/
-
-.hero, .hero2 {
-  width: 300px;
-  float: left;
-  margin: 30px;
+  border-bottom: none;
   text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  float: left;
 }
-img {
-  width: 200px;
-
+.tab-b {
+  width: 800px;
+  height: 500px;
+  border: 1px solid grey;
+  padding: 10px;
+  float: left;
+  background: #fff;
+}
+.tabs-header .non-active {
+  background: #000;
+  color: #fff;
+}
+.tabs-body .non-active {
+  display: none;
+}
+.active {
+  background: #fff;
+  display: block;
 }
